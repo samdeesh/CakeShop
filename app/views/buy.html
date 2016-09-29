@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-sm-5">
+        <img class="media-object img-responsive" ng-src="{{::buy.response.image_url}}" alt="{{::buy.response.name}}">
+    </div>
+    <div class="col-sm-7 ">
+        <h4 class="media-heading">{{::buy.response.name|uppercase}}</h4>
+        <h5>Price: Rs{{::buy.response.price}}</h5>
+        <p>Flavor #: <select name="flavors" id="flavor" ng-model="buy.select">
+      <option ng-repeat="option in buy.response.flavor" value="{{option}}">{{option}}</option>
+    </select></p>
+        <p>Description: {{::buy.response.desc}}</p>
+    </div>
+</div>
